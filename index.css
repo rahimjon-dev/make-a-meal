@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Caveat:wght@600&display=swap');
+
+:root {
+  --bg-surface: #ffffff;
+  
+  --primary-dark: #1f1412; /* Espresso Brown */
+  --primary-main: #c67c33; /* Caramel Orange */
+  --primary-light: #ebd8c3; /* Latte Beige */
+  
+  --accent-gold: #fbbf24;
+  
+  --text-dark: #2a1c18;
+  --text-gray: #6b5c58;
+  
+  --border-color: #e6dac8;
+  --glass-shadow: 0 15px 40px rgba(31, 20, 18, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #faf6f0; /* Creamy background */
+  background-image: none; /* Removed the green dots */
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 1350px;
+  position: relative;
+  z-index: 1;
+}
+
+.handwritten {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  color: var(--primary-main);
+}
+
+/* Fullscreen Loader */
+.loader-container {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: var(--bg-surface);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-logo {
+  color: var(--primary-main);
+  margin-bottom: 1rem;
+}
+
+.loader-text {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  color: var(--primary-dark);
+}
